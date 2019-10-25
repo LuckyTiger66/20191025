@@ -34,6 +34,7 @@
 		});	
 	});
 	
+	$('#myListview').listview('refresh');
 	function ShowData(data){
 		for( var i=0 ,cnt=data.length ; i<cnt ; ++i ){
 			// 從 json 資料取得區名
@@ -69,6 +70,7 @@
 			});		
 		}
 		$("#output").listview("refresh");
+
 	}
 
 	// 在 show 頁面顯示該區中所有旅館的 [旅館名稱、地址、連絡電話] 並建立超連結
@@ -84,12 +86,14 @@
 				strHtml+='<div class="title"><h3>' + Arytitle[i]+ '</h3></div>';
 				strHtml+='<div>' + Aryaddr[i]+ '</div>';
 				strHtml+='<div>' + Arytel[i] +'</div></li>';
-			$("#output2").append(strHtml) ;  	
+			$("#output2").append(strHtml) ;  
+
 		}
 		// 按下超連結時以 data-addr 傳遞該旅館的地址用以顯示該旅館的地圖 
 		$("a",$("#output2")).bind("click", function(e) {
 			SearchFor($(this).attr("data-addr"));  // 以地址搜尋旅館位置
 		});	
+		$("#show").page() ; 
 		$("#output2").listview("refresh");
 	}	
 	
