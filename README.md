@@ -26,7 +26,7 @@ $password = "123456";
 $sql = "SELECT * FROM hoteldata";
 ```
 ## 開啟方式
-1. 網址開啟可用http://localhost/webdesign/taipeihotel_v2-master/
+網址可用localhost開啟，來避免ip連線造成的問題
 
 ## 使用平台與技術
 ![](https://i.imgur.com/n6qQFfu.png)
