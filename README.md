@@ -8,6 +8,10 @@
 ![](https://i.imgur.com/CDxwdEA.png)
 
 ## 安裝
+1. 使用XAMPP等整合架站軟體，設定環境
+2. 放進XAMPP對應目錄htdocs中
+可參考[架PHP專案執行環境](https://ithelp.ithome.com.tw/articles/10216841)
+
 ### 資料庫的部分
 1. 匯入sql檔案裡面的資料表
 2. 修改dbtool.inc.php
@@ -21,6 +25,8 @@ $password = "123456";
 <!-- hoteldata改成你的資料庫名稱 -->
 $sql = "SELECT * FROM hoteldata";
 ```
+## 開啟方式
+1. 網址開啟可用http://localhost/webdesign/taipeihotel_v2-master/
 
 ## 使用平台與技術
 ![](https://i.imgur.com/n6qQFfu.png)
