@@ -13,8 +13,14 @@
 可參考[架PHP專案執行環境](https://ithelp.ithome.com.tw/articles/10216841)
 
 ### 資料庫的部分
-1. 匯入sql檔案裡面的資料表
-2. 修改dbtool.inc.php
+1. 資料庫預設為hotel
+可修改20191023-hotel-api.php
+```php=
+<!-- 更改資料庫預設名稱 -->
+$result = execute_sql($link, "hotel", $sql);
+```
+2. 匯入sql檔案裡面的資料表到hotel資料庫
+3. 修改dbtool.inc.php
 ```php=
 <!-- 更改本地資料庫登入的帳號密碼 -->
 $username = "admin";
