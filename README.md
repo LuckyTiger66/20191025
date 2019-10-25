@@ -20,11 +20,6 @@
 $username = "admin";
 $password = "123456";
 ```
-3. 修改20191023-hotel-api.php
-```php=
-<!-- hoteldata改成你的資料庫名稱 -->
-$sql = "SELECT * FROM hoteldata";
-```
 ## 開啟方式
 網址可用localhost開啟，來避免ip連線造成的問題
 
